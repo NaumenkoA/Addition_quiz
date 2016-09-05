@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.alexapps.additionquiz.QuizActivity"
+    android:background="#16cc4a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is 48 + 12?"
+        android:id="@+id/questionTextView"
+        android:layout_marginTop="55dp"
+        android:textSize="40dp"
+        android:textColor="#80ffffff"
+        android:layout_below="@+id/correctAnswers"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submitButton"
+        android:id="@+id/radioGroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="53dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="57"
+            android:id="@+id/answerButton1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="30dp"
+            android:textColor="#80ffffff"
+            android:singleLine="false"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:id="@+id/answerButton2"
+            android:layout_below="@+id/answerButton1"
+            android:layout_alignLeft="@+id/answerButton1"
+            android:layout_alignStart="@+id/answerButton1"
+            android:layout_marginTop="28dp"
+            android:textSize="30dp"
+            android:textColor="#80ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70"
+            android:id="@+id/answerButton3"
+            android:layout_below="@+id/answerButton2"
+            android:layout_alignLeft="@+id/answerButton2"
+            android:layout_alignStart="@+id/answerButton2"
+            android:layout_marginTop="32dp"
+            android:textSize="30dp"
+            android:textColor="#80ffffff" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attempts: 0"
+        android:id="@+id/attemptsNumber"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:textColor="#80ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct: 0"
+        android:id="@+id/correctAnswers"
+        android:layout_below="@+id/attemptsNumber"
+        android:layout_alignRight="@+id/attemptsNumber"
+        android:layout_alignEnd="@+id/attemptsNumber"
+        android:textSize="20dp"
+        android:textColor="#80ffffff"/>
+
+</RelativeLayout>
